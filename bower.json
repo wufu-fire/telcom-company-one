@@ -1,0 +1,25 @@
+{
+  "name": "telcom-company-one",
+  "description": "demo",
+  "main": "index.js",
+  "authors": [
+    "xuan.wang"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "js",
+    "html",
+    "css"
+  ],
+  "homepage": "https://github.com/xuanGetit/telcom-company-one",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
