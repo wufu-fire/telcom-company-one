@@ -5,8 +5,8 @@ $(function() {
             currentPage: 1,
             totalPage: total,
             callback: function(current) {
-                // 获取当前页面表格数据
-                $.get("/test2.json", function(res) {
+                // 后去分页数据，current为当前页数，比如第2页。将current传递到后台，返回指定页数对应的数据。
+                $.get("/test2.json?page=" + current, function(res) {
                     // 返回数据状态值为200
                     if (res.code === 200) {
                         var data = res.msg;
@@ -25,6 +25,7 @@ $(function() {
                                 '</td>' +
                                 '</tr>';
                         }
+                        //将拼装好的字符串放到容器中。
                         $('#table-content').html(html);
                     } else {
                         //返回状态值为其他，报错提醒
@@ -35,7 +36,7 @@ $(function() {
         });
     }
 
-
+    //获取首页数据
     $.get("/test1.json", function(res) {
         // 返回数据状态值为200
         if (res.code === 200) {
@@ -63,6 +64,4 @@ $(function() {
             alert("返回错误")
         }
     });
-
-
 })
