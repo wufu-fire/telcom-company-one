@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台管理系统</title>
+    <!--bootstrap的css-->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--自己写的css-->
+    <link href="index.css" rel="stylesheet">
+    <!--分页css-->
+    <link href="page/jquery.pagination.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row self-row">
+            <div class="col-md-12">
+                <p class="text-center title lead">客户经理派单管理系统</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-default" type="submit" data-toggle="modal" data-target="#myModal">提交任务</button>
+            </div>
+        </div>
+        <div class="row self-row">
+            <div class="col-md-12">
+                <table class="table table-bordered self-table">
+                    <tr>
+                        <td>任务编号</td>
+                        <td>客户经理</td>
+                        <td>任务分类</td>
+                        <td>截止日期</td>
+                        <td>储备状态</td>
+                        <td>操作</td>
+                    </tr>
+                    <tr>
+                        <td>000000</td>
+                        <td>刘备</td>
+                        <td>话费</td>
+                        <td>2017-08-13</td>
+                        <td>完成</td>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-xs">查看</button>
+                            <button type="button" class="btn btn-primary btn-xs">删除</button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>000000</td>
+                        <td>刘备</td>
+                        <td>话费</td>
+                        <td>2017-08-13</td>
+                        <td>完成</td>
+                        <td>
+                            <button type="button" class="btn btn-xs">查看</button>
+                            <button type="button" class="btn btn-xs">删除</button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>000000</td>
+                        <td>刘备</td>
+                        <td>话费</td>
+                        <td>2017-08-13</td>
+                        <td>完成</td>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-xs">查看</button>
+                            <button type="button" class="btn btn-primary btn-xs">删除</button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>000000</td>
+                        <td>刘备</td>
+                        <td>话费</td>
+                        <td>2017-08-13</td>
+                        <td>完成</td>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-xs">查看</button>
+                            <button type="button" class="btn btn-primary btn-xs">删除</button>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>000000</td>
+                        <td>刘备</td>
+                        <td>话费</td>
+                        <td>2017-08-13</td>
+                        <td>完成</td>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-xs">查看</button>
+                            <button type="button" class="btn btn-primary btn-xs">删除</button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>000000</td>
+                        <td>刘备</td>
+                        <td>话费</td>
+                        <td>2017-08-13</td>
+                        <td>完成</td>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-xs">查看</button>
+                            <button type="button" class="btn btn-primary btn-xs">删除</button>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>000000</td>
+                        <td>刘备</td>
+                        <td>话费</td>
+                        <td>2017-08-13</td>
+                        <td>完成</td>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-xs">查看</button>
+                            <button type="button" class="btn btn-primary btn-xs">删除</button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>000000</td>
+                        <td>刘备</td>
+                        <td>话费</td>
+                        <td>2017-08-13</td>
+                        <td>完成</td>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-xs">查看</button>
+                            <button type="button" class="btn btn-primary btn-xs">删除</button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>000000</td>
+                        <td>刘备</td>
+                        <td>话费</td>
+                        <td>2017-08-13</td>
+                        <td>完成</td>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-xs">查看</button>
+                            <button type="button" class="btn btn-primary btn-xs">删除</button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>000000</td>
+                        <td>刘备</td>
+                        <td>话费</td>
+                        <td>2017-08-13</td>
+                        <td>完成</td>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-xs">查看</button>
+                            <button type="button" class="btn btn-primary btn-xs">删除</button>
+
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-right">
+                <div id="pagination1" class="page fl"></div>
+                <!--<nav aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>-->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--引入jquery-->
+    <!--<script src="../bower_components/jquery/dist/jquery.min.js"></script>-->
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <!--引入bootstrap的js文件-->
+    <!--<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
+    <!--引入分宜的js-->
+    <!--<script src="page/jquery.pagination.min.js"></script>-->
+    <!--自己的js-->
+    <!--<script src="index.js"></script>-->
+</body>
+
+</html>

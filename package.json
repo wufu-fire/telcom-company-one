@@ -4,7 +4,8 @@
     "description": "demo",
     "main": "index.js",
     "scripts": {
-        "dev": "lite-server"
+        "dev": "lite-server",
+        "mock": "mock-server"
     },
     "repository": {
         "type": "git",
@@ -22,6 +23,8 @@
     },
     "homepage": "https://github.com/xuanGetit/telcom-company-one#readme",
     "devDependencies": {
+        "front-end-mock": "^1.0.6",
         "lite-server": "^2.3.0"
-    }
+    },
+    "dependencies": {}
 }
